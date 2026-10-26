@@ -1,0 +1,160 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080d18;
+    color: #e6edf7;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px;
+    background-color: #101d35;
+    border-bottom: 3px solid #245b9e;
+}
+
+header h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin-bottom: 10px;
+    color: #f1f6ff;
+}
+
+header p {
+    color: #bdcde3;
+    font-size: 1.1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px;
+    background-color: #050a12;
+    border-bottom: 1px solid #1c3555;
+}
+
+nav a {
+    color: #e6edf7;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #245b9e;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+main {
+    width: min(100% - 32px, 1000px);
+    margin: 40px auto;
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.kartya {
+    background-color: #111c2e;
+    padding: 30px;
+    border-radius: 18px;
+    border: 2px solid #1c3555;
+}
+
+h2 {
+    color: #8fc5ff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #a9d2ff;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.kartya img {
+    display: block;
+    width: 100%;
+    max-height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.kartya p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    padding: 5px 0;
+}
+
+li::marker {
+    color: #6fa8e8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 50px;
+    background-color: #050a12;
+    color: #bdcde3;
+    border-top: 2px solid #1c3555;
+}
+
+@media (max-width: 900px) {
+    main {
+        width: calc(100% - 32px);
+        margin: 25px auto;
+    }
+
+    .kartya {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 35px 15px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 9px 13px;
+    }
+
+    main {
+        width: calc(100% - 20px);
+        margin: 20px auto;
+    }
+
+    .kartya {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
